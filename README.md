@@ -35,3 +35,12 @@ Variable : val” <br/>
 
 Since these threads are unsynchronized, there is a possibility of race conditions occurring depending on the actual <br/> interleaved execution order of the various threads. Insert nanosleep() commands into your thread code to induce as many <br/>
 race  conditions as possible by forcing an (in)appropriate interleaved execution sequence. <br/>
+
+### Build Instructions
+        gcc pthread_race.c -o pthread -lpthread
+### Run Instructions
+        ./pthread
+### Explain why your program produces the wrong output
+    Because of the race condition which is happned in the implimentation.
+    
+
