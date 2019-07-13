@@ -40,7 +40,6 @@ race  conditions as possible by forcing an (in)appropriate interleaved execution
         gcc pthread_race.c -o pthread -lpthread
 ### Run Instructions
         ./pthread
-### Explain why your program produces the wrong output
-    Because of the race condition which is happned in the implimentation.
+
     
 
